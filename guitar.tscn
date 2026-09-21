@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dp1y250110kiv"]
+
+[ext_resource type="Script" uid="uid://doxxr6ja435s7" path="res://guita.gd" id="4_hwrhl"]
+[ext_resource type="Texture2D" uid="uid://bhf6ecbl6kbad" path="res://some-guitars-i-made-getting-into-pixel-art-v0-80qdhpjjbcl81.png" id="5_n75sy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_elvf4"]
+size = Vector2(72, 202)
+
+[node name="Guitar" type="CharacterBody2D" unique_id=160199958]
+script = ExtResource("4_hwrhl")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=495896404]
+position = Vector2(234.62498, 318.00003)
+scale = Vector2(0.08499153, 0.08298054)
+texture = ExtResource("5_n75sy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=857955500]
+position = Vector2(231, 318)
+shape = SubResource("RectangleShape2D_elvf4")
